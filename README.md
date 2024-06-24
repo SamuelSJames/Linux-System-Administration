@@ -1,3 +1,5 @@
+### README.md
+
 # Linux System Administration Showcase
 
 Welcome to the Linux System Administration Showcase project! This repository demonstrates essential Linux system administration tasks using four different servers: two Ubuntu servers, one Alpine server, and one RockyLinux server. The project highlights the configuration and management of DHCP, DNS, and Nginx servers, along with the use of Docker and Ansible for automation.
@@ -8,51 +10,51 @@ This project aims to showcase various Linux system administration skills by sett
 
 ## Project Structure
 
-The project is organized into daily tasks, with each day focusing on specific aspects of system administration. Here’s a quick overview of what you will find in this repository:
+The project is organized into steps, with each step focusing on specific aspects of system administration. Here’s a quick overview of what you will find in this repository:
 
-- **Day 1: System Setup and Initial Configuration**
+- **Step 1: System Setup and Initial Configuration**
   - Install and configure Alpine, Ubuntu, and RockyLinux servers.
   - Configure basic network settings.
 
-- **Day 2: User Management and Security**
+- **Step 2: User Management and Security**
   - Create and manage user accounts and groups.
   - Implement basic security measures.
 
-- **Day 3: Package Management and Software Installation**
+- **Step 3: Package Management and Software Installation**
   - Install and configure essential software packages.
-  - Setup and configure Nginx on RockyLinux.
+  - Setup and configure Nginx on Ubuntu Server 1.
 
-- **Day 4: File Systems and Storage Management**
+- **Step 4: File Systems and Storage Management**
   - Configure and manage file systems and storage.
   - Implement backup strategies.
 
-- **Day 5: Networking and Remote Access**
+- **Step 5: Networking and Remote Access**
   - Configure DHCP and DNS on Alpine.
-  - Setup and configure SSH on Ubuntu Server 2.
+  - Setup and configure SSH on RockyLinux.
 
-- **Day 6: Monitoring and Logging**
+- **Step 6: Monitoring and Logging**
   - Implement system monitoring and logging.
   - Setup a centralized logging server.
 
-- **Day 7: Automation and Scripting**
+- **Step 7: Automation and Scripting**
   - Create automation scripts for routine tasks.
   - Configure and use Ansible for automation.
 
 ## Server Roles
 
-- **Ubuntu Server 1:**
-  - Docker Host (running a common enterprise application)
-
-- **Ubuntu Server 2:**
+- **RockyLinux Server:**
   - SSH Server
   - Ansible Control Node
+
+- **Ubuntu Server 1:**
+  - Docker Host (running a common enterprise application)
+  - Nginx Web Server
 
 - **Alpine Server:**
   - DHCP Server
   - DNS Server
 
-- **RockyLinux Server:**
-  - Nginx Web Server
+- **Ubuntu Server 2:**
   - Database Server for the Dockerized application
 
 ## Getting Started
@@ -61,18 +63,18 @@ To get started with this project, follow the steps below:
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/yourusername/linux-system-administration-showcase.git
+   git clone https://github.com/SamuelSJames/Linux-System-Administration.git
    cd linux-system-administration-showcase
    ```
 
 2. **Setup the Servers:**
-   - Follow the documentation in the `Day1/system-setup.md` file to install and configure Alpine, Ubuntu, and RockyLinux servers.
-   - Configure network settings as described in the `Day1/network-configuration.md` file.
+   - Follow the documentation in the `Step1/system-setup.md` file to install and configure Alpine, Ubuntu, and RockyLinux servers.
+   - Configure network settings as described in the `Step1/network-configuration.md` file.
 
-3. **Install Ansible on Ubuntu Server 2:**
+3. **Install Ansible on the RockyLinux Server:**
    ```bash
-   sudo apt update
-   sudo apt install ansible -y
+   sudo dnf install epel-release -y
+   sudo dnf install ansible -y
    ```
 
 4. **Run Ansible Playbooks:**
@@ -87,25 +89,25 @@ To get started with this project, follow the steps below:
 ```plaintext
 linux-system-administration-showcase/
 ├── README.md
-├── Day1/
+├── Step1/
 │   ├── system-setup.md
 │   ├── network-configuration.md
-├── Day2/
+├── Step2/
 │   ├── user-management.md
 │   ├── security-configuration.md
-├── Day3/
+├── Step3/
 │   ├── package-management.md
 │   ├── web-server-setup.md
-├── Day4/
+├── Step4/
 │   ├── file-systems.md
 │   ├── backup-strategies.md
-├── Day5/
+├── Step5/
 │   ├── network-services.md
 │   ├── vpn-setup.md
-├── Day6/
+├── Step6/
 │   ├── monitoring.md
 │   ├── centralized-logging.md
-├── Day7/
+├── Step7/
 │   ├── automation-scripts.md
 │   ├── configuration-management.md
 ├── ansible/
