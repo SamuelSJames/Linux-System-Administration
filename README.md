@@ -87,7 +87,7 @@ To get started with this project, follow the steps below:
 ## Repository Structure
 
 ```plaintext
-linux-system-administration-showcase/
+linux-system-administration/
 ├── README.md
 ├── Step1/
 │   ├── system-setup.md
