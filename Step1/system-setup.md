@@ -4,8 +4,6 @@
 
 ![Network Topology](path_to_topology_image.png)
 
-*Replace `path_to_topology_image.png` with the actual path to your network topology image.*
-
 ## Prerequisites
 
 - Installation media for Ubuntu
@@ -26,8 +24,8 @@
   - DB Server 3: 192.168.1.203
 
 - **Storage Servers:**
-  - Storage Server 1: 192.168.1.301
-  - Storage Server 2: 192.168.1.302
+  - Storage Server 1: 192.168.1.111
+  - Storage Server 2: 192.168.1.112
 
 ## Installation Steps
 
@@ -53,3 +51,4 @@
    ```bash
    sudo apt update
    sudo apt upgrade -y
+   ```

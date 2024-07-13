@@ -18,8 +18,8 @@ This project demonstrates Linux system administration skills through the setup o
   - **DB Server 3:** 192.168.1.203
 
 - **Storage Servers:**
-  - **Storage Server 1:** 192.168.1.91
-  - **Storage Server 2:** 192.168.1.92
+  - **Storage Server 1:** 192.168.1.111
+  - **Storage Server 2:** 192.168.1.112
 
 - **Network Devices:**
   - **TOR Switch 1:** 192.168.1.10
@@ -36,6 +36,7 @@ This project demonstrates Linux system administration skills through the setup o
   - PostgreSQL
 
 - **Storage Servers:**
+  - Ceph
   - GlusterFS
 
 - **Automation and Configuration Management:**
@@ -43,7 +44,7 @@ This project demonstrates Linux system administration skills through the setup o
 
 ## Network Topology
 
-![Network Topology](path_to_topology_image.png)
+![Network Topology](/assets/Network-Overview.png)
 
 ## Setup Instructions
 
@@ -57,3 +58,47 @@ Follow the steps in the `system-setup.md` and `network-configuration.md` files t
 - Database server setup with MySQL and PostgreSQL
 - Storage server setup with Ceph and GlusterFS
 - Automation with Ansible
+
+## Repository Structure
+```bash
+linux-system-administration/
+├── README.md
+├── Step1/
+│   ├── system-setup.md
+│   ├── network-configuration.md
+├── Step2/
+│   ├── user-management.md
+│   ├── security-configuration.md
+├── Step3/
+│   ├── package-management.md
+│   ├── web-server-setup.md
+├── Step4/
+│   ├── file-systems.md
+│   ├── backup-strategies.md
+├── Step5/
+│   ├── network-services.md
+│   ├── vpn-setup.md
+├── Step6/
+│   ├── monitoring.md
+│   ├── centralized-logging.md
+├── Step7/
+│   ├── automation-scripts.md
+│   ├── configuration-management.md
+├── ansible/
+│   ├── inventory
+│   ├── playbook.yml
+│   └── roles/
+├── docker/
+│   ├── docker-compose.yml
+│   └── application/
+├── scripts/
+│   ├── backup-script.sh
+│   ├── user-management-script.sh
+│   └── update-script.sh
+└── configurations/
+    ├── sshd_config
+    ├── ufw-rules
+    ├── nginx.conf
+    ├── fstab
+    └── dhcpd.conf
+```

@@ -2,9 +2,7 @@
 
 ## Network Topology
 
-![Network Topology](path_to_topology_image.png)
-
-*Replace `path_to_topology_image.png` with the actual path to your network topology image.*
+![Network Topology](/assets/network_topology.png)
 
 ## Network Configuration Details
 
@@ -26,8 +24,8 @@
 ### Storage Servers
 
 - **Static IP Addresses:**
-  - Storage Server 1: 192.168.1.301
-  - Storage Server 2: 192.168.1.302
+  - Storage Server 1: 192.168.1.111
+  - Storage Server 2: 192.168.1.112
 
 ### Network Devices
 
@@ -45,3 +43,4 @@
 1. **Edit the netplan configuration file:**
    ```bash
    sudo nano /etc/netplan/01-netcfg.yaml
+   ```
